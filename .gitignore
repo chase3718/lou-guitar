@@ -5,6 +5,8 @@
 *.so
 *.dylib
 guitar-project
+lou-guitar
+bin/
 
 # Test binary
 *.test
