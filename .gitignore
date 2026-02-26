@@ -1,25 +1,40 @@
-# Binaries
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-guitar-project
-lou-guitar
+# -------------------- Go --------------------
+
+# Compiled binaries
 bin/
 
-# Test binary
+# Test binaries and coverage
 *.test
-
-# Output of go coverage tool
 *.out
 
-# Dependency directories
+# Dependency directory (using go mod)
 vendor/
 
-# Go workspace file
+# Go workspace files
 go.work
 go.work.sum
 
-# Environment files
+# -------------------- Arduino --------------------
+
+# arduino-cli build output (created inside the sketch folder)
+arduino/*/build/
+
+# arduino-cli libraries cached locally
+arduino/*/libraries/
+
+# -------------------- Environment --------------------
 .env
+.env.*
+!.env.example
+
+# -------------------- OS --------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------- Editors --------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
